@@ -1,2 +1,2 @@
 # conveyor-belt-deeplens
-A smart conveyor-belt with DeepLens and IoT
+A smart conveyor-belt with AWS DeepLens and IoT
