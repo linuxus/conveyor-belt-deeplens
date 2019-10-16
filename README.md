@@ -16,7 +16,7 @@ In this lab you will be achieving the following:
 
 ## Table of Contents
 1. [Architecture](#Architecture)
-2. [LAB 1 - Create an *object-detection* project](#createmodel)
+2. [LAB 1 - Create an *object-detection* project](#lab1)
     - [Deploy your project](#deployproject)
     - [View your project output](#projectoutput)
 3. [LAB 2 - Create Conveyor-belt Project](#conveyorbeltproject):
@@ -25,7 +25,7 @@ In this lab you will be achieving the following:
 Lab Architecture
 ![](assets/Conveyor_Lab_Architecture_1.png)
 
-## Lab 1
+## Lab 1 <a id="lab1"></a>
 1. Login into your AWS Lab account. Please consult the presenter's slide for detailed instructions:
 
 2. Make sure you are using the N. Virginia region when you login into the console.
@@ -85,7 +85,7 @@ Next you will deploy the Object Detection project you just created.
 
    This will take you to to device screen, which shows the progress of your project deployment.
 
-### View your project log messages in IoT:
+### View your project log messages in IoT: <a id="projectoutput"></a>
 
 You can also view the log messages that your project's Lambda function running on DeepLens device sends to IoT topic.
 
