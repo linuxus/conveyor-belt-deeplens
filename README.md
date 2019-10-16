@@ -101,6 +101,23 @@ You can also view the log messages that your project's Lambda function running o
 
 ![](assets/dlmessages.png)
 
+### View your project video stream via your browser:
+
+You can also view the project video stream via your local browser.
+1. Make sure that you are connected to the Lab WiFi. Please ask ith the instructor to obtain the credentials.
+2. You need to have Firefox browser on your local machine. IE is not supported for streaming video.
+3. Request your device streaming certificate from the instructor. This certificate is unique for each device.
+4. Once you have obtained your device's certificate
+5. In Firefox: Choose Options (Preferences for older versions)
+6. Choose Privacy & Security (Advanced for older versions)
+7. Under Certificates, choose View Certificates
+8. Under the Your Certificates tab, choose Import
+9. Browse for the streaming certificate that you downloaded as part of registration
+
+*NOTE*: For certificate password, type "DeepLens" and choose OK
+
+You can observe the different types of object been recognized, labeled and confidence score with bounding boxes. The entire object detection abeling inference is happening on the device localy.
+
 ### Completion:
 You have created and deployed object detection project to your Deeplens device.
 
