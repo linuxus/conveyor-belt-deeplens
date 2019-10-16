@@ -139,7 +139,12 @@ In this lab you will be creating a new project to detect a specific object with 
 4. Under Permission, expand the "Choose or create an execution role" and select use existing role radio button.
 5. Choose the role in the drop down option for *Existing role*
 ![](assets/Lambda_Management_Console_1.png)
-
+6. And click on "Create Function"
+7. In the next screen update the function handler with *greengrassHelloWorld.lambda_handler*
+7. Drop down the "Code entry type" and select "Upload a .zip file".
+![](assets/Lambda_Management_Console_2.png)
+8. Click on the upload button and choose the .zip file you downloaded earlier step.
+9. Click on "*Save*" button on the top right corner of the screen
 ### Create Your Project
 
 1. On new tab, open the AWS DeepLens console at https://console.aws.amazon.com/deeplens/.
