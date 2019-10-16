@@ -128,7 +128,7 @@ In this lab you will be creating a new project to detect a specific object with 
 ### Download the ML model and your desired Lambda function
 
 1. On new tab, open the model folder in GitHub at https://github.com/linuxus/conveyor-belt-deeplens/tree/master/model, click on the file *conveyor-model.tar.gz* and download the model.
-![](assets/conveyor-belt-deeplens_model_1)
+![](assets/conveyor-belt-deeplens_model_1.png)
 2. On new tab, open the functions folder in GitHub at https://github.com/linuxus/conveyor-belt-deeplens/tree/master/functions.
 3. Choose the function that you need to use to detect the right object. For example if you'd like to detect a "car" with your DeepLens click on the *conveyor-object-detection-car.zip* file.
 4. Then click on the download button.
