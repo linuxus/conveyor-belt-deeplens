@@ -7,33 +7,36 @@ This repository contains lab instruction to build a demo in your class to that w
 
 There will be a physical version of this lab running on an actual conveyor-belt to showcase the interaction between the DeepLens camera, conveyor-bet device and IoT Cloud.
 
-## Learning Objectives of This lab
+## Learning Objectives of the lab
 In this lab you will be achieving the following:
 - Create and deploy object detection project to DeepLens.
-- Modify the DeepLens object detection inference lambda function to detect persons and upload frame to S3.
-- Create lambda function to identify persons who are not wearing safety hats.
-- Analyze results using IoT and CloudWatch and Web Dashboard.
+- View DeepLens camera inference output via AWS IoT Core.
+- Create new DeepLens project to detect specific object and communicate with digital twin conveyor belt.
+- Analyze results using IoT and CloudWatch.
+
 ## Table of Contents
 1. [Architecture](#Architecture)
-2. [Modules](#Modules)
-3. [LAB 1 - Register your DeepLens Device](#registerdl)
-4. [LAB 2 - Create an *object-detection* project](#createmodel)
+2. [LAB 1 - Create an *object-detection* project](#createmodel)
     - [Deploy your project](#deployproject)
     - [View your project output](#projectoutput)
-
-5. [LAB 3 - Create Worker Safety Project](#workersafetyproject):
-    - [Step 1: Setup IAM Role for Cloud Lambda](#cloudiamrole)
-     - [Step 2: Setup IAM Role for DeepLens Lambda](#dliamrole)
-     - [Step 3: Create S3 bucket](#s3create)
-    - [Step 4: Create Cloud Lambda](#cloudlambda)
-    - [Step 5: Create DeepLens Inference Lambda Function](#inferencelambda)
-    - [Step 6: Create DeepLens Project](#createdlproject)
-    - [Step 7: Deploy DeepLens Project](#deploydlproject)
-     - [Step 8: View Output in IoT](#iotoutput)
-     - [Step 9: View Output in CloudWatch](#cloudwatchoutput)
-    - [Step 10: View Output in Web Dashboard](#dashboardoutput)
-6. [Clean Up](#cleanup)
+3. [LAB 2 - Create Conveyor-belt Project](#conveyorbeltproject):
 
 ## Architecture
+Lab Architecture
+![](assets/Conveyor_Lab_Architecture_1.png)
 
+1. Login into your AWS Lab account. Please consult the presenter's slide for detailed instructions:
+
+2. Make sure you are using the N. Virginia region when you login into the console.
 ![](assets/AWS_Management_Console_1.png)
+
+3. Go to the DeepLens service by searching "DeepLens" in the *find services* search menu
+![](assets/AWS_Management_Console_2.png)
+click on the name and the DeepLens service console page will open.
+
+4. Make sure that there is a DeepLens device registered:
+![](assets/AWS_DeepLens_1.png)
+
+5. Click on the device name and make sure that it shows *online* before proceeding the rest of the lab. *NOTE*: if the device does not show online please notify the instructore.
+![](assets/AWS_DeepLens_2.png)
+
