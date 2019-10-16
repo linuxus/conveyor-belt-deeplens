@@ -206,7 +206,7 @@ This step is important because the Lambda function running on the DeepLens devic
 6. Click next on the screen
 7. configure the IoT topic with the following confiuration: *$aws/things/ConveyorSim/shadow/update* and click on next:
 ![](assets/AWS_IoT_subscription_3.png)
-8. Click on Finish
+8. Click Next and finish
 9. Now you need to deploy the configuration on the device. On the next page click on *Deployment*, then select *Actions* and click on *Deploy*
 10. Wait until the deployment is successful.
 ![](assets/AWS_IoT_subscription_4.png)
