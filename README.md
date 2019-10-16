@@ -125,14 +125,15 @@ You have created and deployed object detection project to your Deeplens device.
 
 In this lab you will be creating a new project to detect a specific object with the DeepLens device and send an IoT message to the cloud to trigger an action: Stopping a digital twin conveyor belt running in a virtual scene (AWS Sumerian) and flash the object detected.
 
-### Download your desired Lambda function
+### Download the ML model and your desired Lambda function
 
-1. On new tab, open the functions folder in GitHub at https://github.com/linuxus/conveyor-belt-deeplens/tree/master/functions.
-2. Choose the function that you need to use to detect the right object. For example if you'd like to detect a "car" with your DeepLens click on the *conveyor-object-detection-car.zip* file.
-3. Then click on the download button.
+1. On new tab, open the model folder in GitHub at https://github.com/linuxus/conveyor-belt-deeplens/tree/master/model and download the model file: *conveyor-model.tar.gz*
+2. On new tab, open the functions folder in GitHub at https://github.com/linuxus/conveyor-belt-deeplens/tree/master/functions.
+3. Choose the function that you need to use to detect the right object. For example if you'd like to detect a "car" with your DeepLens click on the *conveyor-object-detection-car.zip* file.
+4. Then click on the download button.
 ![](assets/download_function_1.png)
 
-### Create your inference function in the cloud
+### Create your inference lambda function
 1. On new tab, open the AWS Lambda console at https://console.aws.amazon.com/lambda/.
 2. Click on "Create function" button on top right corner.
 3. Select "Author from scratch", provide a name: *conveyor-belt-car*, change the runtime option to *Python 2.7*
@@ -145,6 +146,11 @@ In this lab you will be creating a new project to detect a specific object with 
 ![](assets/Lambda_Management_Console_2.png)
 8. Click on the upload button and choose the .zip file you downloaded earlier step.
 9. Click on "*Save*" button on the top right corner of the screen
+10. Click on the "*Actions*" button menu and select publish a new version option from the drop down.
+![](assets/Lambda_Management_Console_3.png)
+11. Click on "Publish" button:
+![](assets/Lambda_Management_Console_4.png)
+
 ### Create Your Project
 
 1. On new tab, open the AWS DeepLens console at https://console.aws.amazon.com/deeplens/.
@@ -159,5 +165,12 @@ In this lab you will be creating a new project to detect a specific object with 
         * Project name: conveyor-belt
     * Under Project content:
         * Click on Add model, click on radio button for deeplens-object-detection and click Add model.
-        * Click on Add function, click on radio button for your lambda function (example: lab1-worker-safety-deeplens) lambda function and click Add function.
+        * Click on Add function, click on radio button for your lambda function (example: conveyor-belt-car) lambda function and click Add function.
 * Click Create. This returns you to the Projects screen.
+### Deploy DeepLens Project <a id="deploydlproject"></a>
+
+1. From DeepLens console, On the Projects screen, choose the radio button to the left of your project name, then choose Deploy to device.
+2. On the Target device screen, from the list of AWS DeepLens devices, choose the radio button to the left of the device where you want to deploy this project.
+3. Choose Review. This will take you to the Review and deploy screen.
+    If a project is already deployed to the device, you will see a warning message "There is an existing project on this device. Do you want to replace it? If you Deploy, AWS DeepLens will remove the current project before deploying the new project."
+4. On the Review and deploy screen, review your project and click Deploy to deploy the project. This will take you to to device screen, which shows the progress of your project deployment.
