@@ -194,6 +194,16 @@ In this lab you will be creating a new project to detect a specific object with 
 4. On the Review and deploy screen, review your project and click Deploy to deploy the project. This will take you to to device screen, which shows the progress of your project deployment.
 5. Make sure that the project deploys successfully.
 
+## Update your Project with object detection model
+1. From DeepLens console, On the Projects screen, choose the radio button to the left of your project name, then choose Edit (button on top right corner).
+2. Click on Remove the Model button
+3. Click on Add Model link, select *deeplens-object-detection* model and Add model
+4. Click on the Save button. This will publish a new version of your project.
+5. On the Projects screen, choose the radio button to the left of your project name, then choose Deploy to device.
+6. On the Target device screen, from the list of AWS DeepLens devices, choose the radio button to the left of the device where you want to deploy this project.
+7. Choose Review. This will take you to the Review and deploy screen.
+
+
 ### Create an IoT subscription for the inference lambda
 This step is important because the Lambda function running on the DeepLens device needs to send IoT message to the device shadow. For security reason this is not enabled by default. You will need to create the subscription as per below:
 1. On new tab, open the AWS DeepLens console at https://console.aws.amazon.com/iot/.
