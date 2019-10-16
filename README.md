@@ -36,4 +36,4 @@ In this lab you will be achieving the following:
 
 ## Architecture
 
-![](AWS_Management_Console_1.png)
+![](assets/AWS_Management_Console_1.png)
