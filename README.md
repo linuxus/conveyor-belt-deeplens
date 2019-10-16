@@ -182,7 +182,7 @@ In this lab you will be creating a new project to detect a specific object with 
     * Under Project information section:
         * Project name: conveyor-belt
     * Under Project content:
-        * Click on Add model, click on radio button for deeplens-object-detection and click Add model.
+        * Click on Add model, click on radio button for conveyor-belt and click Add model.
         * Click on Add function, click on radio button for your lambda function (example: conveyor-belt-car) lambda function and click Add function.
 * Click Create. This returns you to the Projects screen.
 ### Deploy DeepLens Project <a id="deploydlproject"></a>
@@ -192,3 +192,21 @@ In this lab you will be creating a new project to detect a specific object with 
 3. Choose Review. This will take you to the Review and deploy screen.
     If a project is already deployed to the device, you will see a warning message "There is an existing project on this device. Do you want to replace it? If you Deploy, AWS DeepLens will remove the current project before deploying the new project."
 4. On the Review and deploy screen, review your project and click Deploy to deploy the project. This will take you to to device screen, which shows the progress of your project deployment.
+5. Make sure that the project deploys successfully.
+
+### Create an IoT subscription for the inference lambda
+This step is important because the Lambda function running on the DeepLens device needs to send IoT message to the device shadow. For security reason this is not enabled by default. You will need to create the subscription as per below:
+1. On new tab, open the AWS DeepLens console at https://console.aws.amazon.com/iot/.
+2. Click on Greengrass on the left nagivation bar and select the "Groups" sub-menu.
+3. Click on the group icon in the middle pane
+4. Click on Subscriptions and click on Add Subscriptions:
+![](assets/AWS_IoT_subscription_1.png)
+5. Select Lambdas for service and IoT Cloud for target:
+![](assets/AWS_IoT_subscription_2.png)
+6. Click next on the screen
+7. configure the IoT topic with the following confiuration: *$aws/things/ConveyorSim/shadow/update* and click on next:
+![](assets/AWS_IoT_subscription_3.png)
+8. Click on Finish
+9. Now you need to deploy the configuration on the device. On the next page click on *Deployment*, then select *Actions* and click on *Deploy*
+10. Wait until the deployment is successful.
+![](assets/AWS_IoT_subscription_4.png)
