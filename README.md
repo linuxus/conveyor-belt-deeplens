@@ -220,3 +220,16 @@ This step is important because the Lambda function running on the DeepLens devic
 9. Now you need to deploy the configuration on the device. On the next page click on *Deployment*, then select *Actions* and click on *Deploy*
 10. Wait until the deployment is successful.
 ![](assets/AWS_IoT_subscription_4.png)
+
+### Running a simulation with the digital twin conveyor belt
+1. Launch your AWS Sumerian scene for your account. *NOTE*: Please consult your instructor's slide or communication for the links
+2. Once launched the scene would look similar to below:
+![](assets/Conveyor_Simulator_-_Sumerian_1.png)
+
+The button controls the virtual conveyor belt as well as simulating fault such as belt jam.
+
+3. Click on forward button to initiate a belt moving
+4. Put an expected object on fron the DeepLens camera for about 15-30 seconds. The conveyor should stop and will flash the object detected name on it.
+5. You can double click on the reset button on the top left corner of the screen to clear the error.
+
+### Completion of the lab
