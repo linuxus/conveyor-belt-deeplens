@@ -40,7 +40,7 @@ click on the name and the DeepLens service console page will open.
 
 5. Click on the device name and make sure that it shows *online* before proceeding the rest of the lab. *NOTE*: if the device does not show online please notify the instructore.
 ![](assets/AWS_DeepLens_2.png)
-#### Create Your Project
+### Create Your Project
 
 1. Using your browser, open a **new tab** for AWS DeepLens console at https://console.aws.amazon.com/deeplens/.
 2. Choose Projects, then choose Create new project.
@@ -59,7 +59,7 @@ click on the name and the DeepLens service console page will open.
 
 This returns you to the Projects screen where the project you just created is listed with your other projects.
 
-#### Deploy your project <a id="deployproject"></a>
+### Deploy your project <a id="deployproject"></a>
 
 Next you will deploy the Object Detection project you just created.
 
@@ -85,7 +85,7 @@ Next you will deploy the Object Detection project you just created.
 
    This will take you to to device screen, which shows the progress of your project deployment.
 
-#### View your project log messages in IoT:
+### View your project log messages in IoT:
 
 You can also view the log messages that your project's Lambda function running on DeepLens device sends to IoT topic.
 
@@ -104,3 +104,23 @@ You can also view the log messages that your project's Lambda function running o
 ### Completion:
 You have created and deployed object detection project to your Deeplens device.
 
+## Lab 2
+
+In this lab you will be creating a new project to detect a specific object with the DeepLens device and send an IoT message to the cloud to trigger an action: Stopping a digital twin conveyor belt running in a virtual scene (AWS Sumerian) and flash the object detected.
+
+### Create Your Project
+
+1. On new tab, open the AWS DeepLens console at https://console.aws.amazon.com/deeplens/.
+2. Choose Projects, then choose Create new project.
+3. On the Choose project type screen
+
+* Choose Create a new blank project, and click Next.
+
+4. On the Specify project details screen
+
+    * Under Project information section:
+        * Project name: conveyor-belt
+    * Under Project content:
+        * Click on Add model, click on radio button for deeplens-object-detection and click Add model.
+        * Click on Add function, click on radio button for your lambda function (example: lab1-worker-safety-deeplens) lambda function and click Add function.
+* Click Create. This returns you to the Projects screen.
