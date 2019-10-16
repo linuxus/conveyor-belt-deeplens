@@ -125,6 +125,21 @@ You have created and deployed object detection project to your Deeplens device.
 
 In this lab you will be creating a new project to detect a specific object with the DeepLens device and send an IoT message to the cloud to trigger an action: Stopping a digital twin conveyor belt running in a virtual scene (AWS Sumerian) and flash the object detected.
 
+### Download your desired Lambda function
+
+1. On new tab, open the functions folder in GitHub at https://github.com/linuxus/conveyor-belt-deeplens/tree/master/functions.
+2. Choose the function that you need to use to detect the right object. For example if you'd like to detect a "car" with your DeepLens click on the *conveyor-object-detection-car.zip* file.
+3. Then click on the download button.
+![](assets/download_function_1.png)
+
+### Create your inference function in the cloud
+1. On new tab, open the AWS Lambda console at https://console.aws.amazon.com/lambda/.
+2. Click on "Create function" button on top right corner.
+3. Select "Author from scratch", provide a name: *conveyor-belt-car*, change the runtime option to *Python 2.7*
+4. Under Permission, expand the "Choose or create an execution role" and select use existing role radio button.
+5. Choose the role in the drop down option for *Existing role*
+![](assets/Lambda_Management_Console_1.png)
+
 ### Create Your Project
 
 1. On new tab, open the AWS DeepLens console at https://console.aws.amazon.com/deeplens/.
