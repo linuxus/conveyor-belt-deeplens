@@ -121,7 +121,7 @@ You can observe the different types of object been recognized, labeled and confi
 ### Completion:
 You have created and deployed object detection project to your Deeplens device.
 
-## Lab 2
+## Lab 2 <a id="conveyorbeltproject"></a>
 
 In this lab you will be creating a new project to detect a specific object with the DeepLens device and send an IoT message to the cloud to trigger an action: Stopping a digital twin conveyor belt running in a virtual scene (AWS Sumerian) and flash the object detected.
 
