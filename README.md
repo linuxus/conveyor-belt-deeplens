@@ -152,6 +152,23 @@ In this lab you will be creating a new project to detect a specific object with 
 11. Click on "Publish" button:
 ![](assets/Lambda_Management_Console_4.png)
 
+### Import the ML model in your console
+1. On new tab, open the Amazon S3 console at https://console.aws.amazon.com/s3/.
+2. Create a new bucket called: *deeplens-demo#* where # is your demo ID number. For example deeplens-demo3 for lab3 user. *Note*: if the bucket already exist you do not need to re-create it.
+3. Once the bucket is created click on it to open
+4. Click on "Upload" button and upload the model that you've downloaded in previous step.
+5. On new tab, open the AWS DeepLens console at https://console.aws.amazon.com/deeplens/.
+6. Click on "Models" on the right navigation bar.
+7. Click on "Import model" on the top right corner
+8. On the Import model page:
+    
+    - type the location of the model in your S3 bucket
+    - Give it a name: conveyor-belt
+    - Select MXNet for the Model Framework
+    - Optionally give a description and click on Import model
+![](assets/AWS_DeepLens_Model_Import_1.png)
+
+
 ### Create Your Project
 
 1. On new tab, open the AWS DeepLens console at https://console.aws.amazon.com/deeplens/.
