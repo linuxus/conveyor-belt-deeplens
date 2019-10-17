@@ -229,9 +229,13 @@ This step is important because the Lambda function running on the DeepLens devic
 2. Click on Greengrass on the left nagivation bar and select the "Groups" sub-menu.
 3. Click on the group icon in the middle pane
 4. Click on Subscriptions and click on Add Subscriptions:
+
 ![](assets/AWS_IoT_subscription_1.png)
+
 5. Select Lambdas for service and IoT Cloud for target:
+
 ![](assets/AWS_IoT_subscription_2.png)
+
 6. Click next on the screen
 7. configure the IoT topic with the following confiuration: *$aws/things/ConveyorSim/shadow/update* and click on next:
 
