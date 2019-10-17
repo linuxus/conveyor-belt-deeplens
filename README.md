@@ -58,13 +58,14 @@ Click on the name and the DeepLens service console page will open.
 
 ![](assets/projecttemplate.png)
 
-- Scroll to the bottom of the screen, then choose Next.
-4. On the Specify project details screen
-   - In the Project information section:
-      - Either accept the default name for the project, or type a name you prefer.
-      - Either accept the default description for the project, or type a description you prefer.
+- Scroll to the bottom of the screen, then select "Next"
+4. On the **Specify project details** page
+   - Under the **Project information** section, either:
+      - **Accept** the default name for the project, or type a name you prefer.
+      OR
+      - **Accept** the default description for the project, or type a description you prefer.
 
-  - Choose Create.
+  - Select "Create"
 
 This returns you to the Projects screen where the project you just created is listed with your other projects.
 
