@@ -54,7 +54,7 @@ Click on the name and the DeepLens service console page will open.
 
 1. Using your browser, open a **New Tab** for AWS DeepLens console at https://console.aws.amazon.com/deeplens/
 2. Select "Projects," then select "Create new project"
-3. On the **Choose project type screen**, select "Use a project template," then select "Object detection"
+3. On the **Choose project type page**, select "Use a project template," then select "Object detection"
 
 ![](assets/projecttemplate.png)
 
