@@ -147,18 +147,20 @@ In this lab you will be creating a new project to detect a specific object with 
 
 ![](assets/download_function_1.png)
 
-### Create your inference lambda function
+### Create your inference Lambda function
 1. On new tab, open the AWS Lambda console at https://console.aws.amazon.com/lambda/
 2. Click on "Create function" button on top right corner.
 3. Select "Author from scratch", provide a name: *conveyor-belt-car*, change the runtime option to *Python 2.7*
 4. Under Permission, expand the "Choose or create an execution role" and select use existing role radio button.
 5. Choose the role in the drop down option for *Existing role*
+
 ![](assets/Lambda_Management_Console_1.png)
 6. And click on "Create Function"
 7. In the next screen update the function handler with *greengrassHelloWorld.lambda_handler*
-7. Drop down the "Code entry type" and select "Upload a .zip file".
+7. Drop down the "Code entry type" and select "Upload a .zip file"
 
 ![](assets/Lambda_Management_Console_2.png)
+
 8. Click on the upload button and choose the .zip file you downloaded earlier step.
 9. Click on "*Save*" button on the top right corner of the screen
 10. Click on the "*Actions*" button menu and select publish a new version option from the drop down.
@@ -169,16 +171,16 @@ In this lab you will be creating a new project to detect a specific object with 
 ![](assets/Lambda_Management_Console_4.png)
 
 ### Import the ML model in your console
-1. On new tab, open the Amazon S3 console at https://console.aws.amazon.com/s3/.
+1. On new tab, open the Amazon S3 console at https://console.aws.amazon.com/s3/
 2. Create a new bucket called: *deeplens-demo#* where # is your demo ID number. For example deeplens-demo3 for lab3 user. *Note*: if the bucket already exist you do not need to re-create it.
-3. Once the bucket is created click on it to open
+3. Once the bucket is created, click on it to open
 4. Click on "Upload" button and upload the model that you've downloaded in previous step.
-5. On new tab, open the AWS DeepLens console at https://console.aws.amazon.com/deeplens/.
+5. On new tab, open the AWS DeepLens console at https://console.aws.amazon.com/deeplens/
 6. Click on "Models" on the right navigation bar.
 7. Click on "Import model" on the top right corner
 8. On the Import model page:
     
-    - type the location of the model in your S3 bucket
+    - Type the location of the model in your S3 bucket
     - Give it a name: conveyor-belt
     - Select MXNet for the Model Framework
     - Optionally give a description and click on Import model
@@ -207,7 +209,7 @@ In this lab you will be creating a new project to detect a specific object with 
 1. From DeepLens console, On the Projects screen, choose the radio button to the left of your project name, then choose Deploy to device.
 2. On the Target device screen, from the list of AWS DeepLens devices, choose the radio button to the left of the device where you want to deploy this project.
 3. Choose Review. This will take you to the Review and deploy screen.
-    If a project is already deployed to the device, you will see a warning message "There is an existing project on this device. Do you want to replace it? If you Deploy, AWS DeepLens will remove the current project before deploying the new project."
+    If a project is already deployed to the device, you will see a warning message ***"There is an existing project on this device. Do you want to replace it? If you Deploy, AWS DeepLens will remove the current project before deploying the new project."***
 4. On the Review and deploy screen, review your project and click Deploy to deploy the project. This will take you to to device screen, which shows the progress of your project deployment.
 5. Make sure that the project deploys successfully.
 
@@ -221,7 +223,7 @@ In this lab you will be creating a new project to detect a specific object with 
 7. Choose Review. This will take you to the Review and deploy screen.
 
 
-### Create an IoT subscription for the inference lambda
+### Create an IoT subscription for the inference Lambda
 This step is important because the Lambda function running on the DeepLens device needs to send IoT message to the device shadow. For security reason this is not enabled by default. You will need to create the subscription as per below:
 1. On new tab, open the AWS DeepLens console at https://console.aws.amazon.com/iot/.
 2. Click on Greengrass on the left nagivation bar and select the "Groups" sub-menu.
@@ -232,15 +234,19 @@ This step is important because the Lambda function running on the DeepLens devic
 ![](assets/AWS_IoT_subscription_2.png)
 6. Click next on the screen
 7. configure the IoT topic with the following confiuration: *$aws/things/ConveyorSim/shadow/update* and click on next:
+
 ![](assets/AWS_IoT_subscription_3.png)
+
 8. Click Next and finish
 9. Now you need to deploy the configuration on the device. On the next page click on *Deployment*, then select *Actions* and click on *Deploy*
 10. Wait until the deployment is successful.
+
 ![](assets/AWS_IoT_subscription_4.png)
 
 ### Running a simulation with the digital twin conveyor belt
 1. Launch your AWS Sumerian scene for your account. *NOTE*: Please consult your instructor's slide or communication for the links
 2. Once launched the scene would look similar to below:
+
 ![](assets/Conveyor_Simulator_-_Sumerian_1.png)
 
 The button controls the virtual conveyor belt as well as simulating fault such as belt jam.
