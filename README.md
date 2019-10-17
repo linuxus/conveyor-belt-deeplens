@@ -112,17 +112,17 @@ You can also view the log messages that your project's Lambda function running o
 ### View your project video stream via your browser:
 
 You can also view the project video stream via your local browser.
-1. Make sure that you are connected to the Lab WiFi. Please ask ith the instructor to obtain the credentials.
-2. You need to have Firefox browser on your local machine. IE is not supported for streaming video.
+1. Make sure that you are connected to the Lab WiFi. Please ask the instructor for the credentials.
+2. You need to have **Firefox** browser on your local machine. IE is not supported for streaming video.
 3. Request your device streaming certificate from the instructor. This certificate is unique for each device.
 4. Once you have obtained your device's certificate
-5. In Firefox: Choose Options (Preferences for older versions)
-6. Choose Privacy & Security (Advanced for older versions)
-7. Under Certificates, choose View Certificates
-8. Under the Your Certificates tab, choose Import
+5. In Firefox: Choose "Options" (Preferences for older versions)
+6. Choose "Privacy & Security" (Advanced for older versions)
+7. Under **Certificates**, choose "View Certificates"
+8. Under the **Your Certificates** tab, choose "Import"
 9. Browse for the streaming certificate that you downloaded as part of registration
 
-*NOTE*: For certificate password, type "DeepLens" and choose OK
+*NOTE*: For certificate password, type "DeepLens" and choose "OK"
 
 You can observe the different types of object been recognized, labeled and confidence score with bounding boxes. The entire object detection abeling inference is happening on the device localy.
 
@@ -136,14 +136,19 @@ In this lab you will be creating a new project to detect a specific object with 
 ### Download the ML model and your desired Lambda function
 
 1. On new tab, open the model folder in GitHub at https://github.com/linuxus/conveyor-belt-deeplens/tree/master/model, click on the file *conveyor-model.tar.gz* and download the model.
+
 ![](assets/conveyor-belt-deeplens_model_1.png)
-2. On new tab, open the functions folder in GitHub at https://github.com/linuxus/conveyor-belt-deeplens/tree/master/functions.
+
+2. On new tab, open the functions folder in GitHub at https://github.com/linuxus/conveyor-belt-deeplens/tree/master/functions
+
 3. Choose the function that you need to use to detect the right object. For example if you'd like to detect a "car" with your DeepLens click on the *conveyor-object-detection-car.zip* file.
+
 4. Then click on the download button.
+
 ![](assets/download_function_1.png)
 
 ### Create your inference lambda function
-1. On new tab, open the AWS Lambda console at https://console.aws.amazon.com/lambda/.
+1. On new tab, open the AWS Lambda console at https://console.aws.amazon.com/lambda/
 2. Click on "Create function" button on top right corner.
 3. Select "Author from scratch", provide a name: *conveyor-belt-car*, change the runtime option to *Python 2.7*
 4. Under Permission, expand the "Choose or create an execution role" and select use existing role radio button.
@@ -152,12 +157,15 @@ In this lab you will be creating a new project to detect a specific object with 
 6. And click on "Create Function"
 7. In the next screen update the function handler with *greengrassHelloWorld.lambda_handler*
 7. Drop down the "Code entry type" and select "Upload a .zip file".
+
 ![](assets/Lambda_Management_Console_2.png)
 8. Click on the upload button and choose the .zip file you downloaded earlier step.
 9. Click on "*Save*" button on the top right corner of the screen
 10. Click on the "*Actions*" button menu and select publish a new version option from the drop down.
+
 ![](assets/Lambda_Management_Console_3.png)
 11. Click on "Publish" button:
+
 ![](assets/Lambda_Management_Console_4.png)
 
 ### Import the ML model in your console
@@ -174,6 +182,7 @@ In this lab you will be creating a new project to detect a specific object with 
     - Give it a name: conveyor-belt
     - Select MXNet for the Model Framework
     - Optionally give a description and click on Import model
+    
 ![](assets/AWS_DeepLens_Model_Import_1.png)
 
 
