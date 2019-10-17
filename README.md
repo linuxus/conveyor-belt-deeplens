@@ -1,4 +1,4 @@
-# conveyor-belt-deeplens
+# Conveyor-Belt-Deeplens
 Building a smart conveyor belt using AWS DeepLens and IoT
 
 The Industrial IoT demo is a comprehensive demo that combines several AWS technologies to show the art of the possible around how AWS can play a central role in areas such as: Industrial Design & Automation, Fleet Management, Predictive Maintenance, and Technician Training. It features a 3D printed conveyor belt that is connected to AWS IoT.
@@ -45,7 +45,7 @@ Click on the name and the DeepLens service console page will open.
 
 ![](assets/AWS_DeepLens_1.png)
 
-5. Click on the device name and make sure that it shows *online* before proceeding the rest of the lab. *NOTE*: If the device does not show as "online," please notify the instructor.
+5. Click on the device name and make sure that it shows *online* before proceeding the rest of the lab. *NOTE*: If the device does not show as "Online," please notify the instructor.
 
 ![](assets/AWS_DeepLens_2.png)
 ### Create Your Project
