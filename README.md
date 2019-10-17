@@ -60,14 +60,13 @@ Click on the name and the DeepLens service console page will open.
 
 - Scroll to the bottom of the screen, then select "Next"
 4. On the **Specify project details** page
-   - Under the **Project information** section, either:
-      - **Accept** the default name for the project, or type a name you prefer.
-      OR
-      - **Accept** the default description for the project, or type a description you prefer.
+   - Under the **Project information** section, you can:
+      - **Accept** the default name for the project OR Type a name you prefer.
+      - **Accept** the default description for the project OR Type a description you prefer.
 
-  - Select "Create"
+  - Hit "Create"
 
-This returns you to the Projects screen where the project you just created is listed with your other projects.
+This returns you to the **Projects** page where the project you just created is listed alongside your other projects.
 
 ### Deploy your project <a id="deployproject"></a>
 
