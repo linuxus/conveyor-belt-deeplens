@@ -46,7 +46,7 @@ Click on the name and the DeepLens service console page will open.
 
 ![](assets/AWS_DeepLens_1.png)
 
-5. Click on the device name and make sure that it shows *online* before proceeding the rest of the lab. 
+5. Click on the device name and make sure that it shows *online* before proceeding the rest of the lab.
 *NOTE*: If the device does not show as "Online," please notify the instructor.
 
 ![](assets/AWS_DeepLens_2.png)
