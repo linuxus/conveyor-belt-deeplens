@@ -11,10 +11,10 @@ The instructions below will walk you through a lab on how to leverage your AWS D
 There will be a physical version of this lab running on a 3D conveyor-belt to showcase the interaction between the DeepLens camera, the conveyor-belt device, and IoT Cloud.
 
 ## Learning Objectives of the lab
-In this lab you will be achieving the following:
+In this lab you'll learn how to:
 - Create and deploy object detection and projection through your DeepLens device.
-- View DeepLens camera inference output via AWS IoT Core.
-- Create a new DeepLens project to detect a specific object, and communicate with a digital twin conveyor belt.
+- View the DeepLens' object prediction through the AWS IoT Core console.
+- Create a new DeepLens project to detect a specific object, and communicate with the conveyor belt's "digital twin."
 - Analyze results using IoT and CloudWatch.
 
 ## Table of Contents
