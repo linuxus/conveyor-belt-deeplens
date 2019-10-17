@@ -72,25 +72,24 @@ This returns you to the **Projects** page where the project you just created is 
 
 Next you will deploy the Object Detection project you just created.
 
-1. From Deeplens console, On the Projects screen, choose the radio button to the left of your project name, then choose Deploy to device.
+1. From the DeepLens console, on the **Projects** page, select your project name, then click "Deploy to device."
 
 ![](assets/projecthome.png)
 
-2. On the Target device screen, from the list of AWS DeepLens devices, choose the radio button to the left of the device that you want to deploy this project to. An AWS DeepLens device can have only one project deployed to it at a time.
+2. On the **Target device** page, from the list of AWS DeepLens devices, select the device that you'd like to deploy this project to. An AWS DeepLens device can have only one project deployed to it at a time.
 
 ![](assets/targetdevice.png)
 
-3. Choose Review.
+3. Select "Review."
 
-   This will take you to the Review and deploy screen.
+   This will take you to the **Review and deploy** page.
 
-   If a project is already deployed to the device, you will see an error message
-   "There is an existing project on this device. Do you want to replace it?
-   If you Deploy, AWS DeepLens will remove the current project before deploying the new project."
+   If a project is already deployed to the device, you will see the error message:
+   ***"There is an existing project on this device. Do you want to replace it? If you Deploy, AWS DeepLens will remove the current project before deploying the new project."***
 
-   If you receive an error message stating "Cloud not find a project" please omit and proceed.
+   If you receive an error message stating "Could not find a project," please ignore and proceed.
 
-4. On the Review and deploy screen, review your project and choose Deploy to deploy the project.
+4. On the **Review and deploy** page, review your project and select "Deploy" to deploy the project.
 
    This will take you to to device screen, which shows the progress of your project deployment.
 
