@@ -97,14 +97,14 @@ Next you will deploy the Object Detection project you just created.
 
 You can also view the log messages that your project's Lambda function running on DeepLens device sends to IoT topic.
 
-1. Once the deployment has been successful (Green message at the top), click on *Devices* the left menu.
-2. Click on the name of your DeepLens device and on the next screen click on Copy button on the IoT topic under Project ouput.
+1. Once the deployment has been successful (Green message at the top), select **Devices** on the left menu.
+2. Click on the name of your DeepLens device and on the next screen, select the "Copy" button on the IoT topic under **Project output.**
 
 ![](assets/dliottopic.png)
 
-3. On a new browser tap open the AWS IoT Console at https://console.aws.amazon.com/iot/home?region=us-east-1#/dashboard
+3. On a new browser tab, open the AWS IoT Console at https://console.aws.amazon.com/iot/home?region=us-east-1#/dashboard
 4. Click on Test in the left navigation.
-5. Paste the IoT topic in the textbox under Subscription topic and click Subscribe to topic
+5. Paste the IoT topic in the textbox under "Subscription topic" and click "Subscribe to topic"
 6. You should now see log messages published from DeepLens device to IoT.
 
 ![](assets/dlmessages.png)
