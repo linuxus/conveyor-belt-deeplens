@@ -31,7 +31,7 @@ Lab Architecture
 ## Lab 1 <a id="lab1"></a>
 1. Login into your AWS Lab account. Please consult the presenter's slide for detailed instructions:
 
-2. Make sure you are using the "N. Virginia" region when you login into the console.
+2. Make sure you are using the "N. Virginia" Region when you login into the console.
 
 ![](assets/AWS_Management_Console_1.png)
 
@@ -45,7 +45,7 @@ Click on the name and the DeepLens service console page will open.
 
 ![](assets/AWS_DeepLens_1.png)
 
-5. Click on the device name and make sure that it shows *online* before proceeding the rest of the lab. *NOTE*: if the device does not show online please notify the instructore.
+5. Click on the device name and make sure that it shows *online* before proceeding the rest of the lab. *NOTE*: If the device does not show as "online," please notify the instructor.
 
 ![](assets/AWS_DeepLens_2.png)
 ### Create Your Project
