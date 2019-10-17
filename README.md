@@ -8,7 +8,7 @@ The instructions below will walk you through a lab on how to leverage your AWS D
 - Control a virtual conveyor belt's stepper motor.
 - Publish telemetry data.
 
-There will be a physical version of this lab running on a 3D conveyor-belt to showcase the interaction between the DeepLens camera, the conveyor-belt device, and IoT Cloud.
+There will be a physical version of this lab running on a 3D conveyor belt to showcase the interaction between the DeepLens camera, the conveyor belt device, and IoT Cloud.
 
 ## Learning Objectives of the lab
 In this lab you'll learn how to:
@@ -22,7 +22,7 @@ In this lab you'll learn how to:
 2. [LAB 1 - Create an *object-detection* project](#lab1)
     - [Deploy your project](#deployproject)
     - [View your project output](#projectoutput)
-3. [LAB 2 - Create Conveyor-belt Project](#conveyorbeltproject):
+3. [LAB 2 - Create Conveyor Belt Project](#conveyorbeltproject):
 
 ## Architecture
 Lab Architecture
