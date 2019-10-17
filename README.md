@@ -22,14 +22,14 @@ In this lab you'll learn how to:
 2. [LAB 1 - Create an *object-detection* project](#lab1)
     - [Deploy your project](#deployproject)
     - [View your project output](#projectoutput)
-3. [LAB 2 - Create Conveyor Belt Project](#conveyorbeltproject):
+3. [LAB 2 - Create Conveyor Belt Project](#conveyorbeltproject)
 
-## Architecture
+## 1. Architecture
 Lab Architecture
 
 ![](assets/Conveyor_Lab_Architecture_1.png)
 
-## Lab 1 <a id="lab1"></a>
+## 2. Lab 1 <a id="lab1"></a>
 1. Login into your AWS Lab account. Please consult the presenter's slide for detailed instructions:
 
 2. Make sure you are using the "N. Virginia" Region when you login into the console.
@@ -131,7 +131,7 @@ You can observe the different types of object been recognized, labeled and confi
 ### Completion:
 You have created and deployed object detection project to your Deeplens device.
 
-## Lab 2 <a id="conveyorbeltproject"></a>
+## 3. Lab 2 <a id="conveyorbeltproject"></a>
 
 In this lab you will be creating a new project to detect a specific object with the DeepLens device and send an IoT message to the cloud to trigger an action: Stopping a digital twin conveyor belt running in a virtual scene (AWS Sumerian) and flash the object detected.
 
