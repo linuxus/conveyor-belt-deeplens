@@ -1,4 +1,4 @@
-# Conveyor-Belt-Deeplens
+# Conveyor Belt & DeepLens Workshop
 Building a smart conveyor belt using AWS DeepLens and IoT
 
 The Industrial IoT demo is a comprehensive demo that combines several AWS technologies to show the art of the possible around how AWS can play a central role in areas such as: Industrial Design & Automation, Fleet Management, Predictive Maintenance, and Technician Training. It features a 3D printed conveyor belt that is connected to AWS IoT.
@@ -26,6 +26,7 @@ In this lab you'll learn how to:
 
 ## Architecture
 Lab Architecture
+
 ![](assets/Conveyor_Lab_Architecture_1.png)
 
 ## Lab 1 <a id="lab1"></a>
@@ -45,12 +46,13 @@ Click on the name and the DeepLens service console page will open.
 
 ![](assets/AWS_DeepLens_1.png)
 
-5. Click on the device name and make sure that it shows *online* before proceeding the rest of the lab. *NOTE*: If the device does not show as "Online," please notify the instructor.
+5. Click on the device name and make sure that it shows *online* before proceeding the rest of the lab. 
+*NOTE*: If the device does not show as "Online," please notify the instructor.
 
 ![](assets/AWS_DeepLens_2.png)
 ### Create Your Project
 
-1. Using your browser, open a **new tab** for AWS DeepLens console at https://console.aws.amazon.com/deeplens/.
+1. Using your browser, open a **New Tab** for AWS DeepLens console at https://console.aws.amazon.com/deeplens/.
 2. Choose Projects, then choose Create new project.
 3. On the Choose project type screen
 - Choose Use a project template, then choose Object detection.
